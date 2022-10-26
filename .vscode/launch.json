@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Netlify",
+      "request": "launch",
+      "type": "node",
+      "runtimeExecutable": "npm",      
+      "runtimeArgs": [
+        "run",
+        "dev"
+      ],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "sourceMapPathOverrides": {
+        "webpack:///./*": "${workspaceFolder}/functions/*",
+      },
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ]
+    },
+    {
+      "name": "Launch Current File",
+      "request": "launch",
+      "type": "node",
+      "program": "${file}",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    }
+  ]
+}

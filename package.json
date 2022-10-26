@@ -1,0 +1,16 @@
+{
+  "name": "citas-celebres-ji",
+  "version": "1.0.0",
+  "description": "Citas célebres para JI, con netlify lambda function",
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "dev": "netlify dev",
+    "deploy": "rem git commit -a -m && rem git push",
+    "post-deploy": "start https://app.netlify.com/sites/citas-celebres-ji/deploys",
+    "view-deploy": "start https://citas-celebres-ji.netlify.app"
+  },
+  "keywords": [],
+  "author": "PAL BCN <palbcn@yahoo.com>",
+  "license": "MIT"
+}

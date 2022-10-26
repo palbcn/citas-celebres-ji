@@ -1,0 +1,8 @@
+[build]
+functions = "./functions"
+
+[[redirects]]
+from = "/cita"
+to = "/.netlify/functions/citas"
+status = 200
+
